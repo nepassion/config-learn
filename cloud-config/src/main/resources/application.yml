@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      #分支名称
+      label: master 
+      server:
+        git:
+          #git 地址
+          uri: https://github.com/nepassion/learn.git 
+          username: nepassion
+          password: nepassion1
+          #目录
+          search-paths: learn 
+#eureka:
+#  client:
+#    fetch-registry: false
+#    register-with-eureka: false
